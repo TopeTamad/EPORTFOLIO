@@ -1,0 +1,51 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Logs and caches
+*.log
+logs/
+storage/
+cache/
+tmp/
+
+# PHP / Composer
+vendor/
+composer.lock
+composer.phar
+
+# Node / Frontend (if any)
+node_modules/
+dist/
+build/
+*.map
+
+# Env and secrets
+.env
+.env.*
+*.env
+.env.local
+
+# XAMPP / misc
+htdocs-error.log
+apache/logs/
+php_errors.log
+
+# Git
+
+# Images/cache
+*.cache
+
+# Generated files
+*.min.*
+
+# OS temp
+~$*
+*.tmp
+*.swp
+CHRISYSTEMATIXX/inc/db.php
