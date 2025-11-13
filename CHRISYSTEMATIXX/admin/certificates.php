@@ -59,10 +59,10 @@ $rows = $pdo->query('SELECT * FROM certificates ORDER BY sort_order ASC, id ASC'
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Certificates • Admin</title>
-  <link rel="stylesheet" href="/EPORT/CHRISYSTEMATIXX/assets/css/admin.css">
+  <link rel="stylesheet" href="/CHRISYSTEMATIXX/assets/css/admin.css">
 </head>
 <body>
-  <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div><div><a href="/EPORT/CHRISYSTEMATIXX/admin/">Dashboard</a><a href="/EPORT/CHRISYSTEMATIXX/admin/logout.php">Logout</a></div></div></div>
+  <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div><div><a href="./">Dashboard</a><a href="./logout.php">Logout</a></div></div></div>
   <div class="container">
     <div class="card">
       <h1 class="h1">Certificates</h1>
@@ -104,7 +104,7 @@ $rows = $pdo->query('SELECT * FROM certificates ORDER BY sort_order ASC, id ASC'
                   <button class="button" name="update" value="1">Save</button>
                 </form>
               </td>
-              <td><?php if(!empty($r['image_url'])): ?><img src="/<?php echo 'EPORT/CHRISYSTEMATIXX/'.htmlspecialchars($r['image_url']); ?>" alt="" style="width:90px;height:60px;object-fit:cover;border-radius:8px;"><?php endif; ?></td>
+              <td><?php if(!empty($r['image_url'])): ?><img src="../<?php echo htmlspecialchars($r['image_url']); ?>" alt="" style="width:90px;height:60px;object-fit:cover;border-radius:8px;"><?php endif; ?></td>
               <td><?php echo (int)$r['sort_order']; ?></td>
               <td>
                 <form method="post" onsubmit="return confirm('Delete this certificate?')">
