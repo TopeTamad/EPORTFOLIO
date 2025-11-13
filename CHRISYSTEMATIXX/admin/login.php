@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/../inc/auth.php';
-if (is_logged_in()) { header('Location: /EPORT/CHRISYSTEMATIXX/admin/index.php'); exit; }
+if (is_logged_in()) { header('Location: ./index.php'); exit; }
 $err = '';
 if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
   $token = $_POST['csrf_token'] ?? '';
@@ -8,7 +8,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
     $err = 'Invalid token';
   } else {
     $pass = $_POST['password'] ?? '';
-    if (login($pass)) { header('Location: /EPORT/CHRISYSTEMATIXX/admin/index.php'); exit; }
+    if (login($pass)) { header('Location: ./index.php'); exit; }
     $err = 'Wrong password';
   }
 }
@@ -18,7 +18,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Admin Login • CHRISYSTEMATIXX</title>
-  <link rel="stylesheet" href="/EPORT/CHRISYSTEMATIXX/assets/css/admin.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body>
   <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div></div></div>

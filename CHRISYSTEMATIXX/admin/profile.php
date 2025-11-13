@@ -29,10 +29,10 @@ $profile = $pdo->query('SELECT * FROM profile ORDER BY id DESC LIMIT 1')->fetch(
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Edit Profile • Admin</title>
-  <link rel="stylesheet" href="/EPORT/CHRISYSTEMATIXX/assets/css/admin.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 <body>
-  <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div><div><a href="/EPORT/CHRISYSTEMATIXX/admin/">Dashboard</a><a href="/EPORT/CHRISYSTEMATIXX/admin/logout.php">Logout</a></div></div></div>
+  <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div><div><a href="./">Dashboard</a><a href="./logout.php">Logout</a></div></div></div>
   <div class="container">
     <div class="card">
       <h1 class="h1">Edit Profile</h1>
@@ -53,7 +53,7 @@ $profile = $pdo->query('SELECT * FROM profile ORDER BY id DESC LIMIT 1')->fetch(
           <div><label>Facebook URL<br><input class="input" type="url" name="facebook_url" value="<?php echo htmlspecialchars($profile['facebook_url']); ?>" placeholder="https://facebook.com/yourpage"></label></div>
           <div><label>Instagram URL<br><input class="input" type="url" name="instagram_url" value="<?php echo htmlspecialchars($profile['instagram_url']); ?>" placeholder="https://instagram.com/yourhandle"></label></div>
         </div>
-        <div class="actions"><button class="button" type="submit">Save</button><a class="button outline" href="/EPORT/CHRISYSTEMATIXX/" target="_blank">View site</a></div>
+        <div class="actions"><button class="button" type="submit">Save</button><a class="button outline" href="../" target="_blank">View site</a></div>
       </form>
     </div>
   </div>
