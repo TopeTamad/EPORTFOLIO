@@ -60,7 +60,7 @@ $rows = $pdo->query('SELECT * FROM projects ORDER BY sort_order ASC, id ASC')->f
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Projects • Admin</title>
-  <link rel="stylesheet" href="../assets/css/admin.css">
+  <link rel="stylesheet" href="/CHRISYSTEMATIXX/assets/css/admin.css">
 </head>
 <body>
   <div class="nav"><div class="container inner"><div class="brand">CHRI<span>SYSTEMATIXX</span> Admin</div><div><a href="./">Dashboard</a><a href="./logout.php">Logout</a></div></div></div>
